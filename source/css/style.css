@@ -1,4 +1,29 @@
+body{
+    background-color: #4592AF; 
+}
+
 .logo{
     width: 17rem;
     height: auto;
+    position: fixed;
+    opacity: 0.9;
+}
+
+.nav {
+    background-color: #F6F5F5;
+    border-bottom: 5px solid #E3C4A8;
+    font-size: 1em;
+}
+
+.nav-link{
+    color: #4592AF;
+}
+
+.nav-link:hover{
+    color: #4592AF;
+}
+
+.nav-item:hover{
+    background-color: #E3C4A8;
+    opacity: 0.7;
 }
