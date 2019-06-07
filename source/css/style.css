@@ -1,8 +1,3 @@
-.logo{
-    width: 30rem;
-    height: 100%;
-}
-
 #hero {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://media-public.canva.com/MACNTKY-Sbo/1/screen.jpg");
     background-position: center;
@@ -11,13 +6,26 @@
 }
 
 .header{
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
     position: fixed;
-    top: 0;
-    height: 4.5em;
-    width: 100%;
-    z-index: 99;
+    width: 100%; 
+    height: 5em;
+    padding: 0 3em 0 3em;
 }
 
-.menu {
-    text-align: right;
+.header-logo{
+    height: 100%;
 }
+
+.header-menu{
+    text-align: end;
+    text-transform: uppercase;
+    padding-top: 2em; 
+}
+
+
+.logo{
+    max-height: 100%;
+}
+
