@@ -1,5 +1,12 @@
 <div class="header">
     <div class="header-logo">{{> atoms-logo }}</div>
-    <div class="header-menu"><a>Hola</a></div>    
+    <div class="header-menu"><a href="#">Menú{{> atoms-iconCall(class:'icon-header', icon:'menu', w:'30', h:'17',)}}</a></div>    
 </div>
-<div id="hero"></div>
+<div id="hero" class="msg-prin">
+    <h1>LOS MEJORES REGALOS,<br>
+    <span class="mid-msg">DESAYUNOS Y CENAS SORPRESA</span><br>
+    ¡PARA CUALQUIER OCASION!</h1>
+    <div class="arrow-menu">
+        {{> atoms-iconCall(class:'', icon:'arrow-menu', w:'50' ,h:'50',)}}
+    </div>
+</div>
