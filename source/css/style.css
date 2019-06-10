@@ -15,7 +15,7 @@ body {
     position: fixed;
     width: 100%; 
     height: 6em;
-    padding: 0.5em 3em 0.5em 3em;
+    padding: 0 3em;
     background-color: rgba(0, 0, 0, 0.1);
     font-family: 'Roboto Slab', serif;
     z-index: 20;
@@ -28,7 +28,7 @@ body {
 .header-menu{
     text-align: end;
     text-transform: uppercase;
-    padding-top: 1.8em;    
+    padding-top: 2em;    
 }
 
 .header-menu a{
@@ -84,19 +84,39 @@ h1 br{
     cursor: pointer;
 }
 
-.main {
+.main-par {
     background-color: rgba(253,191,179, 0.7);
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 1em;
+    padding: 1.5em 4em; 
+}
+
+.main-impar {
+    background-color: rgba(253,191,179, 0.5);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1.5em 4em;
+}
+
+.product{
+    justify-self: center;
+    align-self: center;
+}
+
+.product img{
+    border-radius: 1%;
+    border: 0.2em solid rgba(0, 57, 121, 0.7);
 }
 
 .product-description {
     padding: 1em;
     width: fit-content;
     margin: auto;
+    font-family: 'Roboto Slab', serif;
 }
 
 .product-description hr {
@@ -109,11 +129,27 @@ h1 br{
     margin: 0;
     font-family: 'Roboto Slab', serif;
     color: rgb(0,57,121);
+    text-align: right;
+    clear: right;
 }
 
-.breakfast-icon {
+.main-impar .product-description h1{
+    text-align: left;
+    clear: left;
+}
+
+.product-description p{
+    color: #142D4C;
+}
+
+.left-icon {
     vertical-align: unset;
 }
+
+.right-icon {
+    float: right;
+}
+
 
 footer {
     height: 100%;
