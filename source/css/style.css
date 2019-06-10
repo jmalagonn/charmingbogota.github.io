@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
 #hero {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/download.png");
     background-position: center;
@@ -56,7 +60,7 @@
 .msg-prin h1{
     font-family: 'Roboto Slab', serif;
     font-size: 3.2em;
-    font-weight: 999;
+    font-weight: 600;
     letter-spacing: .10em;
     z-index: 10; 
 }
@@ -78,4 +82,70 @@ h1 br{
 
 #icon-arrow-menu {
     cursor: pointer;
+}
+
+.main {
+    background-color: rgba(253,191,179, 0.7);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1em;
+}
+
+.product-description {
+    padding: 1em;
+    width: fit-content;
+    margin: auto;
+}
+
+.product-description hr {
+    border: 0;
+    margin: 0;
+    border-top: 0.4em solid rgba(0,57,121, 0.5);
+}
+
+.product-description h1{
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,57,121);
+}
+
+.breakfast-icon {
+    vertical-align: unset;
+}
+
+footer {
+    height: 100%;
+    background-color: rgba(0, 57, 121, 0.7);
+    display: grid !important;
+    grid-template-columns: 50% 50%;
+    padding: 1.5em;
+    color: whitesmoke;
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.footer-contact {
+    justify-self: center;
+    text-align: center;
+}
+
+.footer-social-networks {
+    justify-self: center;
+}
+
+.social-media {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+.social-media li{
+    display: inline;
+    padding: 0 0.4em;
+}
+
+.social-media li a{
+    text-decoration: none;
 }
