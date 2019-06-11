@@ -3,19 +3,58 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     height: 6em;
+    font-family: 'Roboto', sans-serif;
+    color: 	#003979;  
 }
 
-.right-menu{
+.right-menu {
     text-align: end;
+    text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+    .show-from-small{
+        display: none;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .header-inner .row h1{
+        font-size: 2.5em !important;
+    }
+}  
+
+.right-menu svg{
+    vertical-align: sub;
 }
 
 header {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/banner1.jpg");
-    background-size: cover; 
-    width: 100%;
-    height: 50em;    
+    font-family: 'Montserrat', sans-serif;
+}
+
+.msg1 {
+    color: #F67280;
+}
+
+.msg2 {
+    color: #00334E;
+}
+
+.header-inner {
+    height: 100%;
+    text-align: center;
+}
+
+.header-inner .row {
+    height: 100%;
+}
+
+.header-inner .row h1{
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .logo {
     height: 5em;
+    display: block;
 }
