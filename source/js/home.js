@@ -8,5 +8,11 @@ function getSize()
     if(windowWidth < 575.98){
         document.getElementById("nav").classList.add("justify-content-center");
     }
+
+    if(windowWidth < 600){
+        document.getElementById("breakfast-promo").style.width = windowWidth - 100 + "px";
+    }else{
+        document.getElementById("breakfast-promo").style.width = 600 + "px";
+    }
 }
 

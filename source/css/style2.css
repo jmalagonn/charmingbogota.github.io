@@ -4,7 +4,8 @@
     background-color: rgba(0, 0, 0, 0.1);
     height: 6em;
     font-family: 'Roboto', sans-serif;
-    color: 	#003979;  
+    color: 	#003979;
+    z-index: 90;  
 }
 
 .right-menu {
@@ -37,7 +38,7 @@ header {
 }
 
 .msg2 {
-    color: #00334E;
+    color: #003979;
 }
 
 .header-inner {
@@ -45,8 +46,12 @@ header {
     text-align: center;
 }
 
-.header-inner .row {
-    height: 100%;
+.header-inner .msg {
+    height: 90%;
+}
+
+.header-inner arrow {
+    height: 10%;
 }
 
 .header-inner .row h1{
@@ -57,4 +62,88 @@ header {
 .logo {
     height: 5em;
     display: block;
+}
+
+.arrow-menu {
+    opacity: 0.8;
+}
+
+footer {
+    height: 100%;
+    background-color: rgba(0, 57, 121, 0.9);
+    padding: 1.5em;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+}
+
+.social-media{
+    margin: 0;
+    padding: 0;
+}
+
+.social-media-movil{
+    margin: 0;
+    padding: 0 0 1em 0;
+}
+
+.social-media li,
+.social-media-movil li {
+    display: inline;
+    padding: 0 0.4em;
+}
+
+.social-media li a,
+.social-media-movil li a {
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .show-until-medium{
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .show-from-medium{
+        display: none;
+    }
+}
+
+.block {
+    margin: 1em 0;
+}
+
+.display-tc {
+    display: table-cell;
+    vertical-align: middle;
+    height: 600px;
+    text-align: right;
+}
+
+.card-a {
+    padding: 5em;
+    background: rgba(246, 114, 128, 0.9);
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 57, 121, 1);
+    font-size: 1.3em;
+}
+
+.card-a h1{
+    font-size: 2em;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+#breakfast-promo {
+    height: 100%;
+}
+
+.banner {
+    background: rgba(0, 0, 0, 0.05);
+    margin: 1em 0;
+    padding: 1em 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
 }

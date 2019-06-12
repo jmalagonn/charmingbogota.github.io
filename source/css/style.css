@@ -74,13 +74,6 @@ h1 br{
     margin-bottom: 2em;
 }
 
-.arrow-menu {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    opacity: 0.5;
-}
-
 #icon-arrow-menu {
     cursor: pointer;
 }
@@ -151,18 +144,6 @@ h1 br{
     float: right;
 }
 
-
-footer {
-    height: 100%;
-    background-color: rgba(0, 57, 121, 0.7);
-    display: grid !important;
-    grid-template-columns: 50% 50%;
-    padding: 1.5em;
-    color: whitesmoke;
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-}
-
 .footer-contact {
     justify-self: center;
     text-align: center;
@@ -170,19 +151,4 @@ footer {
 
 .footer-social-networks {
     justify-self: center;
-}
-
-.social-media {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    
-}
-.social-media li{
-    display: inline;
-    padding: 0 0.4em;
-}
-
-.social-media li a{
-    text-decoration: none;
 }
