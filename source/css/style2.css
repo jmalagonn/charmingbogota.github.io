@@ -1,5 +1,5 @@
 .navigation {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     height: 6em;
@@ -112,6 +112,7 @@ footer {
 
 .block {
     margin: 1em 0;
+    position: relative;
 }
 
 .display-tc {
@@ -122,14 +123,32 @@ footer {
 }
 
 .card-a {
-    padding: 5em;
-    background: rgba(246, 114, 128, 0.9);
+    padding: 3em;
+    background: rgba(28, 179, 200, 0.8);
     font-family: 'Montserrat', sans-serif;
-    color: rgba(0, 57, 121, 1);
+    color: whitesmoke;
     font-size: 1.3em;
+    position: absolute;
+    right: 40%;
+    max-width: 500px;
+    border-radius: 1%;
 }
 
-.card-a h1{
+.card-b {
+    padding: 3em;
+    background:rgba(246, 114, 128, 0.8);
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    font-size: 1.3em;
+    position: absolute;
+    left: 40%;
+    max-width: 500px;
+    border-radius: 1%;
+    text-align: right;
+}
+
+.card-a h1,
+.card-b h1 {
     font-size: 2em;
     font-weight: 700;
     color: whitesmoke;
@@ -146,4 +165,9 @@ footer {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
+}
+
+.img-fluid{
+    max-width: 500px;
+    border-radius: 1%;
 }
