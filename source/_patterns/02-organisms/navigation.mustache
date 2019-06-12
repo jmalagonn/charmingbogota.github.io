@@ -1,0 +1,19 @@
+<nav class="navigation">
+    <div class="container">
+        <div class="row no-gutters align-items-center">
+            <div class="col">
+                {{> atoms-logo }}
+            </div>
+            <div class="col right-menu show-from-small">
+                <a href="javascript:showMenu()">
+                    Menú{{> atoms-iconCall(fill:'#003979', icon: 'menu', w:'20', h:'20')}}
+                </a>
+            </div>
+            <div class="col right-menu show-until-small">
+                <a href="javascript:showMenu()">
+                    {{> atoms-iconCall(icon: 'menu', w:'30', h:'30')}}
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
