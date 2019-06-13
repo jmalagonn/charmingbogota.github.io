@@ -1,5 +1,6 @@
 function getSize() {
     let windowHeight = window.innerHeight;
+    document.getElementById("inner-menu").style.display = "none";
 
     if( document.getElementById("hero") != null ){
         document.getElementById("hero").style.height = windowHeight + "px";

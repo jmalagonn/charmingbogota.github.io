@@ -271,6 +271,20 @@ footer {
 
 #inner-menu{
     z-index: 90;
-    display: none;
 }
 
+.internal-header {
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/headerInner.jpg");
+    background-size: cover;
+    z-index: -2;
+    text-align: center;
+    color: #003979;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.internal-header h1 {
+    font-size: 6em;
+    letter-spacing: 0.3em;
+}
