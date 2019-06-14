@@ -87,6 +87,7 @@ footer {
     color: whitesmoke;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
+    margin-top: 1rem;
 }
 
 .social-media{
@@ -205,7 +206,6 @@ footer {
 
 .banner {
     background: rgba(0, 0, 0, 0.05);
-    margin: 1em 0;
     padding: 1em 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -287,4 +287,39 @@ footer {
 .internal-header h1 {
     font-size: 6em;
     letter-spacing: 0.3em;
+}
+
+.promo-desayunos{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron,
+.aditionals,
+.detail-breakfast {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1.show-from-medium {
+    font-size: 5em;
+    letter-spacing: 0.2em;
+}
+
+h1.show-until-medium {
+    font-size: 2em;
+}
+
+.table td{
+    padding: 0.25rem;
+}
+
+.card-text li{
+    list-style: none;
+}
+
+.detail-breakfast {
+    background: mistyrose;
+}
+
+.fixed-top{
+    top: 7em;
 }
