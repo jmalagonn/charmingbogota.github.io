@@ -1,0 +1,158 @@
+<div class="container order-form p-2">
+    <h2 class="text-center mb-3 text-uppercase">Solicitar desayuno</h2>
+    <form action="POST">
+        <div class="form-row">
+            <h3>PASO 1: Información de quíen envía.</h3>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="nameBuyer">Nombre:</label>
+                <input type="text" id="nameBuyer" class="form-control" placeholder="Nombre" required>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="phoneBuyer">Teléfono:</label>
+                <input type="number" id="phoneBuyer" class="form-control" placeholder="Telefono" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cityBuyer">Ciudad:</label>
+                <input type="text" id="cityBuyer" class="form-control" placeholder="Ciudad" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="emailBuyer">Email:</label>
+                <input type="email" id="emailBuyer" class="form-control" placeholder="ejemplo@ejemplo.com" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="selectBreakfast">Escoja su desayuno:</label>
+                <select id="selectBreakfast" class="form-control" placeholder="Escoja su desayuno" required>
+                    <option value="1">Desayuno 1: Especial individual</option>
+                    <option value="2">Desayuno 2: Súper especial</option>
+                    <option value="3">Desayuno 3: Cumpleaños o aniversario</option>
+                    <option value="4">Desayuno 4: Especial para dos</option>
+                    <option value="5">Desayuno 5: Invasion frutal</option>
+                    <option value="6">Desayuno 6: Aroma de café</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <fieldset class="form-group">
+                    <legend class="col-form-label">Desea adicionar algo:</legend>
+                    <div class="custom-control custom-radio d-inline mr-3">
+                        <input class="custom-control-input" type="radio" name="aditionals" value="yesAddition" id="yesAddition" onclick="showAdditionals('yesAddition')">
+                        <label class="custom-control-label" for="yesAddition">Si</label>
+                    </div>
+                    <div class="custom-control custom-radio d-inline">
+                        <input class="custom-control-input" type="radio" name="aditionals" value="noAddition" id="noAddition" onclick="showAdditionals('noAddition')" checked>
+                        <label class="custom-control-label" for="noAddition">No</label>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="form-row">
+            <div id="additionals-block" class="col mb-3">
+                <legend class="col-form-label">Adicionales:</legend>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add1" value="add1">
+                    <label class="custom-control-label" for="add1">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add2" value="add2">
+                    <label class="custom-control-label" for="add2">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add3" value="add3">
+                    <label class="custom-control-label" for="add3">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add4" value="add4">
+                    <label class="custom-control-label" for="add4">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add5" value="add5">
+                    <label class="custom-control-label" for="add5">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add6" value="add6">
+                    <label class="custom-control-label" for="add6">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add7" value="add7">
+                    <label class="custom-control-label" for="add7">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add8" value="add8">
+                    <label class="custom-control-label" for="add8">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add9" value="add9">
+                    <label class="custom-control-label" for="add9">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add10" value="add10">
+                    <label class="custom-control-label" for="add10">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr-4">
+                    <input type="checkbox" class="custom-control-input" id="add11" value="add11">
+                    <label class="custom-control-label" for="add11">Torta personal</label>
+                </div>
+                <div class="custom-control custom-checkbox d-inline mr- 4">
+                    <input type="checkbox" class="custom-control-input" id="add12" value="add12">
+                    <label class="custom-control-label" for="add12">Torta personal</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="selectBreakfast">Forma de pago:</label>
+                <select id="selectBreakfast" class="form-control" placeholder="Escoja su desayuno" required>
+                    <option value="consignacion">Consignación</option>
+                    <option value="giro">Giro nacional o inernacional</option>
+                    <option value="online">*Pago en línea</option>
+                    <option value="contaentrega">Contraentrega (efectivo)</option>
+                </select>
+                <legend><p><small>El pago en línea tiene un valor adicional del 8%</small></p></legend>
+            </div>
+            <div class="col-md-8 mb-3">
+                <label for="observations">Observaciones:</label>
+                <textarea class="form-control" id="observations" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="form-row">
+            <h3>PASO 2: Información de entrega.</h3>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="nameReceptor">Nombre de quien recibe:</label>
+                <input type="text" id="nameReceptor" class="form-control" placeholder="Nombre" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="direction">Dirección de entrega:</label>
+                <input type="number" id="direction" class="form-control" placeholder="Dirección" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="cityReceptor">Ciudad / Municipio:</label>
+                <input type="text" id="cityReceptor" class="form-control" placeholder="Ciudad / Municipio" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="date">Fecha de entrega:</label>
+                <input type="text" id="date" class="form-control" placeholder="DD-MM-AAAA" required>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="hour">Hora de entrega:</label>
+                <input type="number" id="hour" class="form-control" placeholder="HH:MM" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col mb-3">
+                <label for="msg">Mensaje en la tarjeta:</label>
+                <textarea class="form-control" id="msg" rows="3" required></textarea>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar pedido</button>
+    </form>
+</div>

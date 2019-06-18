@@ -35,6 +35,30 @@
     .header-inner .row h1{
         font-size: 2.5em !important;
     }
+    .small-detail {
+        font-size: 0.5em;
+    }
+    .small-detail .card-title,
+    .small-detail .text-muted {
+        margin-bottom: 0;
+    }
+    .small-detail .card-body {
+        padding: 0.2rem 1.25rem;
+    }
+    .small-detail h2 {
+        font-size: 0.8rem;
+    }
+    .small-detail h3 {
+        font-size: 0.7rem;
+    }
+    .small-detail .btn {
+        font-size: 0.7rem;
+        padding: 0.25rem;
+    }
+    .card.small-detail{
+        width: 90%;
+        margin: auto;
+    }
 }  
 
 .right-menu svg{
@@ -127,11 +151,42 @@ footer {
     .show-from-medium{
         display: none;
     }
+    .card.small-detail {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 991.98px) {
     .show-from-large {
         display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card.small-detail {
+        width: 65%;
+        margin: auto;
+    }
+    .md-detail .card-title,
+    .md-detail .text-muted {
+        margin-bottom: 0;
+    }
+    .md-detail .card-body {
+        padding: 0.5rem 1.25rem;
+    }
+    .md-detail {
+        font-size: 0.7em;
+    }
+    .md-detail h2 {
+        font-size: 0.9rem;
+    }
+    .md-detail h3 {
+        font-size: 0.8rem;
+    }
+    .small-detail .btn {
+        font-size: 0.7rem;
+        padding: 0.25rem;
     }
 }
 
@@ -289,7 +344,8 @@ footer {
     letter-spacing: 0.3em;
 }
 
-.promo-desayunos{
+.promo-desayunos,
+.order-form {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -322,4 +378,31 @@ h1.show-until-medium {
 
 .fixed-top{
     top: 7em;
+}
+
+.cerrar {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.order-form {
+    background: ghostwhite;
+}
+
+.order-form small {
+    font-size: 50%;
+    color: red;
+}
+
+.custom-control-input{
+    position: inherit;
 }

@@ -1,11 +1,17 @@
-<div class="container fixed-top">
-    <div class="card detail-breakfast shadow-lg">
+<div id="detail-breakfast" class="container fixed-top">
+    <div class="card detail-breakfast shadow-lg small-detail md-detail">
+        <div class="cerrar">
+            <a href="javascript:show('detail-breakfast')">
+                {{> atoms-iconCall(icon: 'close', fill:'black', w:'20', h:'20')}}
+            </a>
+        </div>
         <div class="row no-gutters align-items-center justify-content-center">
-            <div class="col-md-5 text-center">
+            <div class="col-lg-5 text-center">
                 <img src="../../images/charming.jpg" alt="" class="card-img shadow-lg">
-                <button type="button" class="btn btn-outline-secondary btn-lg mt-3">Ordenar</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg mt-3 show-from-medium">Ordenar</button>
+                <button type="button" class="btn btn-outline-secondary mt-1 show-until-medium">Ordenar</button>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="card-body">
                     <h2 class="card-title">Desayuno 1</h2>
                     <h3 class="text-muted">Contenido</h3>
